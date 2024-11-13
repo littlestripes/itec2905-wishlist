@@ -12,4 +12,8 @@ urlpatterns = [
         views.place_was_visited,
         name="place_was_visited",
     ),
+    # place details
+    path("place/<int:place_pk>", views.place_details, name="place_details"),
+    # delete a place
+    path("place/<int:place_pk>/delete", views.delete_place, name="delete_place"),
 ]

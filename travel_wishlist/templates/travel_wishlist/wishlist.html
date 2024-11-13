@@ -13,7 +13,7 @@
 
     <div class="wishlist-place">
         <span id="place-name-{{ place.pk }}" class="place-name">
-            {{ place.name }}
+            <a href="{% url 'place_details' place_pk=place.pk %}">{{ place.name }}</a>
         </span>
 
         <!-- reverse lookup: action="./place/place.pk/was_visited" -->
